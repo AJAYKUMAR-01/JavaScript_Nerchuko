@@ -1,0 +1,25 @@
+-> Even though we donot write any program in the console, The JS Engine do its job.
+
+Window [Global Object in Browsers]:
+---------
+Window is a big object created by the javascript engine, Which provides many functions.
+It is created along with Global Execution Context.
+
+this :
+--------
+It is variable created by the JS engine at the beginning.
+
+
+-> At the Global Level or at the Base Level
+   this === window
+
+
+Global Space is nothing but any code which we write outside the function.
+
+var a = 10;
+console.log(window.a);
+console.log(a);
+
+both the console statements are same.
+If we write any variable without placing anything before it , it is searched in the Global Space.
+

@@ -1,0 +1,36 @@
+function b(){
+    console.log(a);
+}
+
+var a = 10;
+b();
+
+Output:
+-----------
+10
+
+
+function b(){
+    c();
+
+    function c() {
+        console.log(a);
+    }
+}
+
+var a = 10;
+b();
+
+Output:
+-------------
+10
+
+
+But it won't work viseversa, The Scope is where we can access a variable.
+Scope is directle dependent on the lexical Environment.
+
+When the Execution Context is created then the lexical Environment is also created.
+If code is present in a function then it is called lexical present in that function.
+
+
+This way of finding the variable in the lexical parent is called " Scope Chain "

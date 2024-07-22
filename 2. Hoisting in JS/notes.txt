@@ -1,0 +1,2 @@
+hoisting is phenomina, in which the we can access the variable and function even before declaring or anywhere 
+in the program. 

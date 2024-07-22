@@ -1,0 +1,29 @@
+-> The Execution Context is created in phases.
+    1. memory creation phase - js will allocate memory to all variable and functions.
+       -> if we have a line in the code called " var n = 10; " 
+       then the variable n is allocated value "undefined"
+       -> if it is a function It stores the whole code.
+
+    2. Code Execution phase - 
+        -> if the function is invoked then the local Execution context is created in the 
+           code component.
+        -> once the function is completed then the Execution context is deleted.
+
+
+It is very difficult for js to do all these operations , if is recursive function , it need to create many 
+Execution context.
+
+-> So, it uses a call stack. the bottom has Global Execution Context once the code started Execution. 
+Everytime the Execution context is created, It is kept in the stack. once the process is completed, it is poped out 
+of the stack.
+
+-> So, it is only for managing for Execution context. 
+-> It maintains the order of Execution of Execution contexts.
+
+Call Stack is also known as:
+------------------------------
+1. Execution context stack
+2. program Stack
+3. control Stack
+4. Runtime Stack
+5. Machine Stack

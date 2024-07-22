@@ -1,0 +1,14 @@
+undefined is a placeholder where it is assigned to a variable before the value.
+
+javaScript is loosly typed language becz it doesn't attach its variables to any datatype.
+
+var a;
+a = 10;
+a = "ajay";
+
+Every Line is valid.
+
+
+below code is Not a Good Practise.
+a = undefined; XXXXXX it created many inconsisteny in the code.
+console.log(a);

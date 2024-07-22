@@ -1,0 +1,1 @@
+In the example, output is due to the js engine search the variable in the local memory first. 

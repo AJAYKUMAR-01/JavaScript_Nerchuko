@@ -1,0 +1,10 @@
+-> Everything in js happens in an " Execution Context "
+-> Execution Context is like a box where the code is Executed.
+    -> It has 2 components 
+      1. Memory component [akn variable Environment]
+            where all the variables and functions are stored as key : value pairs
+      2. Code component [akn Thread of Execution]
+            -> It Executes 1 line at a time.
+
+
+-> JS is a synchronous single - Threaded(It Executes one command at a time in a specific order ) lang.
