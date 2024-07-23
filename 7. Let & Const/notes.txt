@@ -1,0 +1,33 @@
+let and const declarations are hoisted.
+
+But, let and const are allocated in different memory space but not in global.
+
+Temporial Dead Zone
+-------------------------
+The time between which since the let variable is hoisted  and It is initialized.
+
+When We try to access the variable in a Temporial Dead Zone it shows a " referrence Error ".
+
+-> If the variable is not defined it gives Error called " referrence Error : the variable is not defined "
+-> But if we try to access the variable which is in Temporial Dead Zone it gives "referrence Error : cannot access
+before initialization "
+
+-> let variables are " not " attached to window object.
+-> let is a little more strict than var.
+-> redeclaration is possible in var but not in let[If we try to I gives a syntax error]. 
+-> The JS engine rejects upfront if it sees any redeclaration.
+
+let a = 10;
+var a = 100;
+
+The above program shows " SyntaxError ".
+
+CONST 
+------------
+-> It is more strict that let.
+-> In let the variable can be initialized anytime, but in case of const it should be initialized once it is 
+declared.
+-> If we do that [SyntaxError : missing initializer in const declaration].
+-> If we try to reassign the const variable it show [TypeError: Assignment to constant variable].
+
+To avoid Temporial Dead Zones it is preferred to place the initialization on the top.
