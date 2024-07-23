@@ -2,8 +2,7 @@ let and const declarations are hoisted.
 
 But, let and const are allocated in different memory space but not in global.
 
-Temporial Dead Zone
--------------------------
+Temporial Dead Zone:
 The time between which since the let variable is hoisted  and It is initialized.
 
 When We try to access the variable in a Temporial Dead Zone it shows a " referrence Error ".
@@ -22,8 +21,7 @@ var a = 100;
 
 The above program shows " SyntaxError ".
 
-CONST 
-------------
+CONST :
 -> It is more strict that let.
 -> In let the variable can be initialized anytime, but in case of const it should be initialized once it is 
 declared.
